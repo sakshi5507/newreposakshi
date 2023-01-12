@@ -1,0 +1,400 @@
+Script started on 2023-01-10 08:35:02+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# exi[K[K[Kcd dir1
+]0;root@labvm: /home/devasc/Desktop/dir1root@labvm:/home/devasc/Desktop/dir1# cd ..
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cd ....
+bash: cd: ....: No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cd[K[Kls dir1
+abc  def  ghij
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ls abc
+ls: cannot access 'abc': No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ls [K[K[Kls -ld abc
+ls: cannot access 'abc': No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ls -l abc
+ls: cannot access 'abc': No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ls -ld dir1
+dr-xr-xr-x 2 root root 4096 Jan 10 08:31 [0m[01;34mdir1[0m
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# chmod a-r^[[2~[K[K[K[K[K[K+rwx dir1
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# s[Kls -ld dir1
+drwxrwxrwx 2 root root 4096 Jan 10 08:31 [0m[34;42mdir1[0m
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ls -ld abc
+ls: cannot access 'abc': No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# s [K[Kls -p[Kl abc
+ls: cannot access 'abc': No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ls -l [Kd dir1/dabc[K[K[K[Kabc
+-rw-r--r-- 1 root root 0 Jan 10 08:24 dir1/abc
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# chmmod [K[K[K[Kod r[Ku-[K+x dir1/abc
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# chmod u+x dir1/abc[3Pls -ld[C[C[C[C[C[C[C[C[C
+-rwxr--r-- 1 root root 0 Jan 10 08:24 [0m[01;32mdir1/abc[0m
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# touch dir1/abc
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ls -l abx[Kc
+ls: cannot access 'abc': No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# ex[K[Kgroupadd devops
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:devasc
+audio:x:29:pulse
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+uuidd:x:111:
+tcpdump:x:112:
+ssh:x:113:
+devasc:x:900:
+lpadmin:x:114:
+sambashare:x:115:
+systemd-coredump:x:999:
+tss:x:116:
+bluetooth:x:117:
+ssl-cert:x:118:
+netdev:x:119:
+lightdm:x:120:
+nopasswdlogin:x:121:
+rtkit:x:122:
+avahi-autoipd:x:123:
+whoopsie:x:124:
+avahi:x:125:
+scanner:x:127:saned
+saned:x:128:
+colord:x:129:
+pulse:x:130:
+pulse-access:x:131:
+stunnel4:x:126:
+vboxsf:x:998:devasc
+docker:x:132:devasc
+snapd-range-524288-root:x:524288:
+snap_daemon:x:584788:
+devops:x:1000:
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# gorup[K[K[K[Kroupmod -n deve[K[K[K[Kdelhisehubc deops[K[K[Kvops
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:devasc
+audio:x:29:pulse
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+gnats:x:41:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:101:
+systemd-network:x:102:
+systemd-resolve:x:103:
+systemd-timesync:x:104:
+crontab:x:105:
+messagebus:x:106:
+input:x:107:
+kvm:x:108:
+render:x:109:
+syslog:x:110:
+uuidd:x:111:
+tcpdump:x:112:
+ssh:x:113:
+devasc:x:900:
+lpadmin:x:114:
+sambashare:x:115:
+systemd-coredump:x:999:
+tss:x:116:
+bluetooth:x:117:
+ssl-cert:x:118:
+netdev:x:119:
+lightdm:x:120:
+nopasswdlogin:x:121:
+rtkit:x:122:
+avahi-autoipd:x:123:
+whoopsie:x:124:
+avahi:x:125:
+scanner:x:127:saned
+saned:x:128:
+colord:x:129:
+pulse:x:130:
+pulse-access:x:131:
+stunnel4:x:126:
+vboxsf:x:998:devasc
+docker:x:132:devasc
+snapd-range-524288-root:x:524288:
+snap_daemon:x:584788:
+delhisehubc:x:1000:
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cat /etc/groupgroupmod -n delhisehubc devops
+groupmod: group 'devops' does not exist
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d clear[K[K[K[K[K/home/globalNew [K -d[Kg[K[K[K[K[K[K[K[K[K[K[K[Kdevasc/globalNew -g developers [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[Kdelhisehub c[K[A]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc [K[A]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc[K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/devasc/globalNew -g delhisehubc-m -[K[K[K[K -m -s shell=== =[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K/bin/bas h globalNw[Kew 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# passwd globalNew
+New password: 
+Retype new password: 
+passwd: password updated successfully
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cat /etc/passd[Kwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:111::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:112::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+devasc:x:900:900:DevNet Associate,,,:/home/devasc:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+lightdm:x:110:120:Light Display Manager:/var/lib/lightdm:/bin/false
+rtkit:x:111:122:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:113:123:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:114:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+kernoops:x:115:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+whoopsie:x:116:124::/nonexistent:/bin/false
+avahi:x:117:125:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:118:114:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:120:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+saned:x:121:128::/var/lib/saned:/usr/sbin/nologin
+hplip:x:122:7:HPLIP system user,,,:/run/hplip:/bin/false
+colord:x:123:129:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:130:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+stunnel4:x:119:126::/var/run/stunnel4:/usr/sbin/nologin
+vboxadd:x:998:1::/var/run/vboxadd:/bin/false
+snapd-range-524288-root:x:524288:524288::/nonexistent:/usr/bin/false
+snap_daemon:x:584788:584788::/nonexistent:/usr/bin/false
+globalNew:x:1000:1000::/home/devasc/globalNew:/bin/bash
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd d[K-d /home -g username -m -s /bin/bash [K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home -g username -m -s /bin/bash [K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home -g username -m -s /bin/bash [K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home -g username -m -s /bin/bash [K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home -g username -m -s /bin/bash [K]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home -g username -m -s /bin/bash [C[C[C[1P[1P[1P[1P[1@n[1@e[1@w[1@D[1@i[1@r[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C n e w D i r e [1P 
+useradd: group 'username' does not exist
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /newDir -g username -m -s /bin/bash newDir [1P[1P[1P[1P[1@e[1@w[1@D[1@i[1@h[1P[C[1@h[1@o[1@m[1@e[1@/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+useradd: group 'username' does not exist
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# useradd -d /home/newDir -g username -m -s /bin/bash newDir [K[K[K[K[K[K[K[K,[K gour[K[K[K[Kabc[C[C[1P[1P[1P[1P[1P[C[1P[1@a[1@b[1@c
+useradd: group 'username' does not exist
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# 
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cd/hi[Kp[Kome
+bash: cd/home: No such file or directory
+]0;root@labvm: /home/devasc/Desktoproot@labvm:/home/devasc/Desktop# cd
+]0;root@labvm: ~root@labvm:~# cd/home
+bash: cd/home: No such file or directory
+]0;root@labvm: ~root@labvm:~# cd /home
+]0;root@labvm: /homeroot@labvm:/home# ls
+[0m[01;34mdevasc[0m
+]0;root@labvm: /homeroot@labvm:/home# ls des[Kvasc
+[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mfile1[0m  [01;34mfile2[0m  [01;34mfile3[0m  [01;34mglobalNew[0m  [01;34mlabs[0m  [01;34mnew1[0m  [01;34mnew2[0m  [01;34mnewfile[0m  [01;34msnap[0m
+]0;root@labvm: /homeroot@labvm:/home# ls devasc[K[K[K[K[K[KglobakNw[K[KNew[1Pew[1PewlewNew[C[C
+ls: cannot access 'globalNew': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# ls devaschome[K[K[K[K[K[Ksc
+[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mfile1[0m  [01;34mfile2[0m  [01;34mfile3[0m  [01;34mglobalNew[0m  [01;34mlabs[0m  [01;34mnew1[0m  [01;34mnew2[0m  [01;34mnewfile[0m  [01;34msnap[0m
+]0;root@labvm: /homeroot@labvm:/home# ls globalNew
+ls: cannot access 'globalNew': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# ls Desktop
+ls: cannot access 'Desktop': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# ls DesktopglobalNew[3PdevascglobalNew[3Pdevasc[Kcd /home[1P/home[K/homeuseradd -d /home/abc -g username -m -s /bin/bash abcnewDir -g username -m -s /bin/bash newDir [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /etc/passwd[Kpasswd globalNewuseradd -d /home/devasc/globalNew -g delhisehubc -m -s /bin/bash globalNew [1P[1P[1P[1P[1P[1P[1P[1@e[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+useradd: user 'globalNew' already exists
+]0;root@labvm: /homeroot@labvm:/home# useradd -d /home/globalNew -g delhisehubc -m -s /bin/bash globalNew [C[C[C[C[1P[1P[1P[1P[1@l[1@1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kuseradd -d /home/global1 -g delhisehubc -m -s /bin/bash global1
+]0;root@labvm: /homeroot@labvm:/home# /home passwd go[Klobal1
+bash: /home: Is a directory
+]0;root@labvm: /homeroot@labvm:/home# passwd globs[Kal1
+New password: 
+Retype new password: 
+passwd: password updated successfully
+]0;root@labvm: /homeroot@labvm:/home# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:111::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:112::/nonexistent:/usr/sbin/nologin
+sshd:x:108:65534::/run/sshd:/usr/sbin/nologin
+devasc:x:900:900:DevNet Associate,,,:/home/devasc:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:109:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+lightdm:x:110:120:Light Display Manager:/var/lib/lightdm:/bin/false
+rtkit:x:111:122:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:113:123:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:114:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+kernoops:x:115:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+whoopsie:x:116:124::/nonexistent:/bin/false
+avahi:x:117:125:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:118:114:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:120:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+saned:x:121:128::/var/lib/saned:/usr/sbin/nologin
+hplip:x:122:7:HPLIP system user,,,:/run/hplip:/bin/false
+colord:x:123:129:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+pulse:x:124:130:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+stunnel4:x:119:126::/var/run/stunnel4:/usr/sbin/nologin
+vboxadd:x:998:1::/var/run/vboxadd:/bin/false
+snapd-range-524288-root:x:524288:524288::/nonexistent:/usr/bin/false
+snap_daemon:x:584788:584788::/nonexistent:/usr/bin/false
+globalNew:x:1000:1000::/home/devasc/globalNew:/bin/bash
+global1:x:1001:1000::/home/global1:/bin/bash
+]0;root@labvm: /homeroot@labvm:/home# cd home[K[K[K[K/[Khome
+bash: cd: home: No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# cd /home
+]0;root@labvm: /homeroot@labvm:/home# /home /home ls
+bash: /home: Is a directory
+]0;root@labvm: /homeroot@labvm:/home# ls
+[0m[01;34mdevasc[0m  [01;34mglobal1[0m
+]0;root@labvm: /homeroot@labvm:/home# ls global1
+]0;root@labvm: /homeroot@labvm:/home# ls -l global1
+total 0
+]0;root@labvm: /homeroot@labvm:/home# ls -l file[K[K[K[Kdir1
+ls: cannot access 'dir1': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# ls -l file1
+ls: cannot access 'file1': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# ls -ld dir1
+ls: cannot access 'dir1': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# cat [K[K[K[Ktouch gloabl`[K1/abc
+touch: cannot touch 'gloabl1/abc': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# ls -ls[Kd glbal[K[K[Kobal1
+drwxr-xr-x 2 global1 delhisehubc 4096 Jan 10 09:47 [0m[01;34mglobal1[0m
+]0;root@labvm: /homeroot@labvm:/home# cat global1
+cat: global1: Is a directory
+]0;root@labvm: /homeroot@labvm:/home# touch global1
+]0;root@labvm: /homeroot@labvm:/home# touch global1[2Pcat[C[C[C[C[C[C[C[C[3@ls -ld[C[C[C[C[C[C[C[Ctouch gloabl1/abc[6Pls -ld dir1 file1[1Pdir1global1[3Pglobal1[K/home /home ls[6Pcd /home[1Phomeat /etc/passwd[1Ppasswd global1[6@/home [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[43@useradd -d /home/global1 -g delhisehubc -m -s /bin/bash[C[C[C[C[C[C[C[CNew -g delhisehubc -m -s /bin/bash globalNew [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls Desktop[KglobalNew[3Pdevasc[K[K[K[K[K[Kglobal1
+]0;root@labvm: /homeroot@labvm:/home# ls -l glb[Kobal1
+total 0
+]0;root@labvm: /homeroot@labvm:/home# ls
+[0m[01;34mdevasc[0m  [01;34mglobal1[0m
+]0;root@labvm: /homeroot@labvm:/home# global[K[K[K[K[K[Kls -ld global1
+drwxr-xr-x 2 global1 delhisehubc 4096 Jan 10 09:55 [0m[01;34mglobal1[0m
+]0;root@labvm: /homeroot@labvm:/home# chown newNamw[K[K [K[K global1
+chown: invalid user: ‘newN’
+]0;root@labvm: /homeroot@labvm:/home# chow [Km[Kn [K[K[K[K[K[Kls glloabl[K[K[K[K[Kobal1
+]0;root@labvm: /homeroot@labvm:/home# ls -ld gloabl1
+ls: cannot access 'gloabl1': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# cat global1
+cat: global1: Is a directory
+]0;root@labvm: /homeroot@labvm:/home# catls -d /[K[K[K[K[K[K[K[K[K[Kls -d global1
+[0m[01;34mglobal1[0m
+]0;root@labvm: /homeroot@labvm:/home# ls -l[Kd /gloabl1
+ls: cannot access '/gloabl1': No such file or directory
+]0;root@labvm: /homeroot@labvm:/home# who
+devasc   tty7         2023-01-09 07:42 (:0)
+]0;root@labvm: /homeroot@labvm:/home# who | tee file1
+devasc   tty7         2023-01-09 07:42 (:0)
+]0;root@labvm: /homeroot@labvm:/home# ls -l fie[Kle1
+-rw-r--r-- 1 root root 44 Jan 10 10:14 file1
+]0;root@labvm: /homeroot@labvm:/home# cat file1
+devasc   tty7         2023-01-09 07:42 (:0)
+]0;root@labvm: /homeroot@labvm:/home# ````````````
+]0;root@labvm: /homeroot@labvm:/home# echo "hello" /[K| [K[K[K| tee file1
+hello
+]0;root@labvm: /homeroot@labvm:/home# ca [K[Kat file1
+hello
+]0;root@labvm: /homeroot@labvm:/home# date|tee abc|sort -x.c[1Px.c[C[C[C |[K[K| wc -l[1@ [2
